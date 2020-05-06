@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org">
+
+<!-- Mirrored from colorlib.com/preview/theme/vegefoods/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2019 08:03:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Local Digital</title>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="/css/magnific-popup.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/ionicons.min.css">
+<link rel="stylesheet" href="/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="/css/jquery.timepicker.css">
+<link rel="stylesheet" href="/css/flaticon.css">
+<link rel="stylesheet" href="/css/icomoon.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="goto-here">
+<div class="py-1 bg-primary">
+<div class="container">
+<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+<div class="col-lg-12 d-block">
+<div class="row d-flex">
+<div class="col-md pr-4 d-flex topper align-items-center">
+<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+<span class="text">+91 8920433711</span>
+</div>
+<div class="col-md pr-4 d-flex topper align-items-center">
+<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+<span class="text">anil10112kumar@email.com</span>
+</div>
+<div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<div class="container">
+<a class="navbar-brand" href="">Local Digital</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" 
+data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="oi oi-menu"></span> Menu
+</button>
+<div class="collapse navbar-collapse" id="ftco-nav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item active"><a href="@{/dummy_fetch}" class="nav-link"></a></li>
+<li class="nav-item"><a th:href="@{/dummy_fetch}" class="nav-link">DummyData</a></li>
+<li class="nav-item"><a th:href="@{/register}" class="nav-link">Sign Up</a></li>
+<li class="nav-item"><a th:href="@{/login}" class="nav-link">Login</a></li>
+<li class="nav-item"><a th:href="@{/logout}" class="nav-link">Logout</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="slider-item">
+<div class="container" style="width:450px; height:600px ; magrin-top:200px">
+<p style="margin-left:100px">All User Details...<p>
+<table>
+    <thead>
+        <tr>
+         <th> S.No </th>
+            <th> <spsn style="margin-left:10px">UserName </spsn></th>
+            <th> <span style="margin-left:30px">Email </span></th>
+             <th> <span style="margin-left:30px">Password </span>  </th>
+        </tr>
+    </thead>
+    <tbody>
+	<tr th:if="${alluserList.empty}">
+            <td colspan="2"> No User are  Available Login First....... </td>
+        </tr>
+        <tr th:each="Registration : ${alluserList}">
+             <td><span th:text="${Registration.id}"> S.No </span></td>
+            <td><span style="margin-left:10px" th:text="${Registration.firstName}"> UserName </span></td>
+            <td><span style="margin-left:20px" th:text="${Registration.emailId}"> Email </span></td>
+             <td><span style="margin-left:30px" th:text="${Registration.password}"> password </span></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+<script src="/js/jquery.min.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/jquery-migrate-3.0.1.min.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/popper.min.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/bootstrap.min.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/jquery.easing.1.3.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/jquery.waypoints.min.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/jquery.stellar.min.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/owl.carousel.min.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/jquery.magnific-popup.min.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/aos.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/jquery.animateNumber.min.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/bootstrap-datepicker.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/scrollax.min.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/google-map.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/main.js" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="03aa9ec1dc9f145847d24fd8-text/javascript"></script>
+<script src="/js/rocket-loader.min.js" data-cf-settings="03aa9ec1dc9f145847d24fd8-|49" defer=""></script></body>
+
+
+</html>
+ 
+    
